@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background: white;
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 16.5px;
+    text-align: center;
+}
+h3{
+    font-size: 14.5px;
+}
+
+/*HEADER*/
+header {
+    top: 0;
+    position: sticky;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back,
+.more {
+
+
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.strelka:hover {
+    color: #FFCC00;
+    transition: 0.2s;
+}
+
+/*MAIN*/
+.banner-wrapper {
+    width: 100%;
+    height: 10%;
+
+    background-color: #aaa;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .media-wrapper {
+    border-radius: 20px 20px 0 0;
+
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+  .media-wrapper::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 350px;
+    /*В рабочем проекте поставить высоту 100%*/
+    background-color: #f3f2f7;
+  }
+  .content {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .clearfix:after,
+  .clearfix:before {
+    content: " ";
+    display: table;
+  }
+.side{
+    background: black;
+    border-radius: 20px 20px 0 0;
+}
+.cntr {
+    
+    text-align: center;
+}
+.nonactive{
+    height: 10px;
+  
+}
+.active{
+    top: 10px;
+    margin: auto;
+    background:rgb(80, 80, 80);
+    height: 4px;
+    width: 25%;
+    border-radius:20px;
+}
+.play {
+    top: 0;
+    font-size: 20px;
+    margin: auto;
+    width: 75%;
+    border-radius: 25px;
+    background-color: #FFCC00;
+    color: black;
+}
+
+.play:hover {
+    opacity: 0.5;
+    transition: 0.1s;
+}
+
+.like {
+    font-size: 15px;
+    margin: auto;
+    width: 45%;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border-radius: 25px;
+}
+
+h3 {
+    padding: 5px;
+    align-items: center;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+}
+
+.album {
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+.text {
+    flex-wrap: wrap;
+    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    margin-left: 15px;
+
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.date{
+    margin-bottom: 20px;
+}
+.name{
+    margin-top: 25px;
+}
+.one{
+    height: 8.5em;
+    padding-top: 37.87514285%;
+}
+.aditional_info{
+    text-align: start;
+    padding: 0;
+}
+.album-slide{
+    margin-left:1em;
+}
+.album-slider{
+    margin:0.5em;
+}
+.track-name{
+    font-size: 15px;
+    font-weight: 400;
+}
+.track-group{
+    font-size: 10px;
+    font-weight: 300;
+}
+.date2{
+    font-weight: 200;
+}
+.name2{
+    font-weight: 300;
+}
+.album2{
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 0.5em;
+}
+main{
+    border-radius:20px 20px 0 0;
+}
+span{
+    font-size: 30px;
+    color: gray;
+    float: right;
+}
+.txt{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 20px;
+}
+.container_2{
+    text-align: center;
+}
+.photo{
+    
+    border-radius: 90%;
+    height: 5.333em;
+}
+.date,
+.date2,
+.aditional_info_name,
+.aditional_info_date{
+    color: gray;
+}
+.aditional_info_name,
+.aditional_info_date{
+    margin: 0;
+}
+.conroller{
+    display: inline-block;
+    margin: auto;
+}
+.link{
+    display: inline-block;
+}
+.flex{
+    align-items:center;
+    display: flex;
+}
+@media (max-width:1023px) {
+    .media{
+        display: block;
+    }
+    .media2{
+        display: none;
+    }
+}
+@media (min-width:1024px) {
+    .media{
+        display: none;
+    }
+    .media2{
+        display: block;
+    }
+}
