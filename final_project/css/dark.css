@@ -6,7 +6,6 @@
 
 [dark] {
     --text-color-p:rgb(83, 242, 211);
-    --text-color-h:rgb(51, 92, 183);
     --var-body-bg: rgb(2, 0, 0);
     --var-body-fc:rgb(255, 255, 255);
     --var-header-bg:rgb(0, 0, 0);
@@ -73,7 +72,7 @@ body{
     color:var(--text-color-p);
 }
 .color-text-h{
-    color:var(--text-color-h);
+    color:var(--text-color-p);
 }
 @media (max-width:900px){
     .header-inner{
