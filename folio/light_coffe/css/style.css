@@ -5,7 +5,6 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#e86591,#e86591, #e75e8c);
 }
 
 i {
@@ -20,16 +19,15 @@ a {
 /*header*/
 
 .header-inner {
-    max-width: 1700px !important;
-    z-index: 3;
     margin-left: 120px;
     display: flex;
     justify-content: space-between;
+    align-items:center;
     margin-top: 30px;
+    margin-right: 120px;
 }
 
 .nav {
-    z-index: 3;
     flex-wrap: wrap;
     display: flex;
 }
@@ -54,11 +52,10 @@ a {
     display: block;
 }
 .double{
-    position: relative;
-
+    display: flex;
+    justify-content: space-between;
 }
 .bottom{
-    position: absolute;
     top: 90px;
     right: 100px;
     font-size: 35px;
@@ -67,10 +64,6 @@ a {
 /*header*/
 
 /*Main*/
-main {
-    max-width: 1700px !important;
-}
-
 .side-bar {
     z-index: 3;
     position: fixed;
@@ -174,4 +167,41 @@ main {
     cursor: pointer;
     margin-bottom: -1000px;
 }
+
+
+
 /*Main*/
+
+@media (max-width:1317px) {
+    .nav-link {
+        margin-left: 3em;
+    }
+    .sale {
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .offer {
+        font-size: 40px;
+        line-height: 30px;
+    }
+}
+@media (max-width:1155px) {
+    .header-inner{
+        margin-right: 3em;
+    }
+}
+@media (max-width:1083px) {
+    .header-inner{
+        margin-right: 1em;
+    }
+    .nav-link {
+        margin-left: 1.5em;
+    }
+    .header-inner{
+        flex-direction: column;
+    }
+    .double{
+        display: flex;
+        justify-content:;
+    }
+}
