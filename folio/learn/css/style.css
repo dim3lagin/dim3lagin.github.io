@@ -78,15 +78,7 @@ a {
 
 
 /*Main*/
-.inner {
-    background-color: #494d55;
-    background-image: url(/images/hero-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-}
+
 
 
 .intro-inner {
@@ -519,18 +511,7 @@ li {
 /*pricing*/
 /*Final*/
 
-.final {
-    background-image: url(/images/map.png);
-    background-color: #494d55;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin: auto;
-    display: flex;
-    padding: 60px 0;
-    align-items: center;
-    max-height: 420px;
-}
+
 
 .final h2 {
     font-size: 36px !important;
