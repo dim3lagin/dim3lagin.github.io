@@ -12,7 +12,32 @@
             document.example_img.src = a;
         }
     </script>
-    <title>Document</title>
+
+    <style>
+        .inner {
+            background: url(images/hero-1.jpg);
+            background-color: #494d55;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+        }
+
+        .final {
+            background: url(images/map.png) #494d55;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            margin: auto;
+            display: flex;
+            padding: 60px 0;
+            align-items: center;
+            max-height: 420px;
+        }
+    </style>
+
+    <title>APPKit</title>
 </head>
 
 <body>
@@ -99,7 +124,7 @@
             <h2 class="heading-users">Many Happy Customers</h2>
             <div class="user-coments">
                 <div class="coment">
-                    <img src="/images/profile-1.png" alt="" class="profile-image">
+                    <img src="images/profile-1.png" alt="" class="profile-image">
                     <div class="text-block">
                         <div class="text-block-padding">
                             <p class="coment-user">Testimonial goes here Donec felis odio, sagittis eu cursus ac,
@@ -120,12 +145,12 @@
                             <p class="contact">@LisaWhite, London</p>
                         </div>
                     </div>
-                    <img src="/images/profile-2.png" alt="" class="profile-image">
+                    <img src="images/profile-2.png" alt="" class="profile-image">
 
                 </div>
 
                 <div class="coment">
-                    <img src="/images/profile-3.png" alt="" class="profile-image">
+                    <img src="images/profile-3.png" alt="" class="profile-image">
                     <div class="text-block">
                         <div class="text-block-padding">
                             <p class="coment-user">Testimonial goes here vestibulum non hendrerit lorem, luctus
@@ -144,7 +169,7 @@
                             <p class="contact">@RyanW, Paris</p>
                         </div>
                     </div>
-                    <img src="/images/profile-4.png" alt="" class="profile-image">
+                    <img src="images/profile-4.png" alt="" class="profile-image">
 
                 </div>
             </div>
@@ -217,7 +242,7 @@
             </div>
             <div class="founders-carts">
                 <div class="founder-cart" style="margin-bottom:20px;">
-                    <img src="/images/team-1.png" alt="" srcset="" style="width:120px;">
+                    <img src="images/team-1.png" alt="" srcset="" style="width:120px;">
                     <div class="founder-name">
                         <h3>Xiaoying Riley</h3>
                     </div>
@@ -237,7 +262,7 @@
 
 
                 <div class="founder-cart" style="margin-bottom:20px;">
-                    <img src="/images/team-2.png" alt="" srcset="" style="width:120px;">
+                    <img src="images/team-2.png" alt="" srcset="" style="width:120px;">
                     <div class="founder-name">
                         <h3>Tomasz Najdek</h3>
                     </div>
@@ -313,8 +338,8 @@
     </main>
 
     <footer class="footer">
-        <div class="container">Designed with by <span id="name-designer"><a href="https://www.xiaoyingriley.com/" id="link-cart"
-                    style="color: #40babd !important;">Xiaoying Riley</a></span> for developers</div>
+        <div class="container">Designed with by <span id="name-designer"><a href="https://www.xiaoyingriley.com/"
+                    id="link-cart" style="color: #40babd !important;">Xiaoying Riley</a></span> for developers</div>
     </footer>
 
     <script src="js/script.js"></script>
