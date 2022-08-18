@@ -407,7 +407,7 @@ form {
 }
 
 .devices {
-    background: url(/img/app.jpg);
+    background: url(../img/app.jpg);
     background-color: #494d55;
     background-repeat: no-repeat;
     background-size: cover;
