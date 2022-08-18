@@ -117,14 +117,7 @@ h1 {
 
 
 
-.item {
-    background: url(/img/killorbecilled.jpg);
-    background-color: #494d55;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 600px; 
-}
+
 
 .flex {
     backdrop-filter: blur(5px);   
