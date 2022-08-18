@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+body {
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body.no-scroll,
+body.show-nav {
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.active {
+    color: #2E9D42;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 35px;
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 42px;
+    background-color: #fff;
+}
+
+.btn--green {
+    color: #2E9D42;
+    transition: linear .2s;
+}
+
+.btn--green:hover {
+    background-color: #2E9D42;
+    color: #fff;
+}
+/*Header*/
+
+.header {
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand img {
+    width: 80px;
+    height: 40px;
+}
+
+.header-inner {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-size: 25px;
+}
+
+/*slider*/
+
+
+
+.item {
+    background: url(/img/killorbecilled.jpg);
+    background-color: #494d55;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px; 
+}
+
+.flex {
+    backdrop-filter: blur(5px);   
+    -webkit-backdrop-filter: blur(5px);   
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.text-slider {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Segoe UI';
+    text-align: center;
+    
+}
+
+
+.album {
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.album-info {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.group {
+    font-size: 35px;
+    font-weight: 600;
+	font-style: normal;
+}
+
+.left,
+.right {
+    font-size: 50px;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+}
+
+.right {
+    right: 0;
+    bottom: 50%;
+}
+
+.left {
+    left: 0;
+    bottom: 50%;
+}
+
+.slider-btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 50px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+}
+
+
