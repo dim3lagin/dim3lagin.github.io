@@ -7,6 +7,10 @@ body {
     font-size: 16px;
 }
 
+.body-noscroll {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -149,6 +153,10 @@ h1 {
 
 }
 
+.slick-slide img {
+    padding: 10px;
+}
+
 .album {
     font-size: 40px;
     color: #fff;
@@ -192,6 +200,11 @@ h1 {
     font-size: 50px;
     font-family: 'Nanum Myeongjo', serif;
     font-weight: 700;
+}
+
+.slider-img {
+    width: 400px;
+    height: 400px;
 }
 
 /*Search*/
@@ -320,11 +333,6 @@ form {
     padding: 0px 60px;
 }
 
-@media (max-width:767px) {
-    .slider {
-        padding: 0px 40px;
-    }
-}
 
 .slider .slick-arrow {
     position: absolute;
@@ -391,7 +399,7 @@ form {
 .text-container-blur {
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(7px);
 }
 
 .text-container {
@@ -439,7 +447,7 @@ form {
 }
 
 .footer h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .brand-footer {
@@ -449,12 +457,192 @@ form {
 }
 
 .img-footer {
-    width: 142px !important;
-    height: 71px !important;
+    width: 102px !important;
+    height: 51px !important;
 }
 
 .contact {
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
+}
+
+/*Media*/
+
+@media (max-width:1330px) {
+    .slider-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-slider,
+    .btn {
+        font-size: 30px;
+    }
+
+    .album-info div {
+        font-size: 30px;
+    }
+
+    .group {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width:1241px) {
+    .container--apps {
+        padding: 0;
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    .flex,
+    .album {
+        flex-direction: column;
+    }
+
+    .text-slider {
+        padding-bottom: 105px;
+    }
+
+    .item,
+    .item2,
+    .flex {
+        height: 800px;
+        height: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .slider {
+        padding: 0px 40px;
+    }
+
+    .search h2 {
+        font-size: 30px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .music-type {
+        font-size: 35px;
+    }
+
+    .d1 input {
+        font-size: 15px;
+    }
+
+    .text-container-blur {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container h2 {
+        padding-left: 20px;
+        font-size: 30px;
+    }
+
+    .apps-icons {
+        justify-content: center;
+        margin: 30px 0;
+        padding-left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .devices {
+        background-position: center;
+
+    }
+
+    .apps-icons img {
+        padding-top: 10px;
+        text-align: center;
+
+    }
+
+    .apps-icons img:last-child {
+        margin: 0;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:666px) {
+    .header {
+        padding: 15px 0;
+    }
+
+    .container--header {
+        padding: 0;
+    }
+
+    .nav {
+        position: absolute;
+        top: 73px;
+        overflow: auto;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 76px);
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        flex-direction: column;
+        padding-right: auto;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        padding: 10px 15px;
+        display: block;
+        text-align: end;
+        margin: 0;
+    }
+
+    .active {
+        color: #fff;
+        background-color: #2E9D42;
+    }
+}
+
+@media (max-width:400px) {
+    .music-type {
+        text-align: center;
+    }
+}
+
+@media (max-width:340px) {
+    .contact {
+        font-size: 15px;
+    }
+    .footer h1 {
+        font-size: 30px;
+    }
+
+    .img-footer {
+        width: 72px !important;
+        height: 36px !important;
+    }
+
+    .d1 input {
+        font-size: 10px;
+    }
+
+    .album-item {
+        width: 150px;
+    }
+    
+    .desription {
+        width: 150px;
+    }
+}
+
+@media (max-width:292px) {
+    .slider-img {
+        width: 250px;
+        height: 250px;
+    }
 }
