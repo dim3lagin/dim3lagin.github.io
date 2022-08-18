@@ -5,13 +5,19 @@ $(function () {
   });
   $('.slider').slick({
 		arrows:true,
-    Infinity: false,
+    	infinity: false,
 		dots:false,
 		slidesToShow:4,
 		autoplay:false,
 		responsive:[
 			{
-				breakpoint: 768,
+				breakpoint: 1067,
+				settings: {
+					slidesToShow:3
+				}
+			},
+			{
+				breakpoint: 803,
 				settings: {
 					slidesToShow:2
 				}
