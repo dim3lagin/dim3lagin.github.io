@@ -16,8 +16,7 @@ a {
     color: #fff;
 }
 
-body.no-scroll,
-body.show-nav {
+.show-nav {
     overflow: hidden;
 }
 
@@ -114,6 +113,7 @@ h1 {
 }
 
 .brand {
+    align-items: center;
     display: flex;
 }
 
@@ -132,6 +132,16 @@ h1 {
     margin: 0 15px;
     font-size: 25px;
 }
+
+/*hamburger*/
+.hamburger-line {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    display: none;
+}
+
 
 /*slider*/
 
@@ -562,7 +572,6 @@ form {
     .apps-icons img {
         padding-top: 10px;
         text-align: center;
-
     }
 
     .apps-icons img:last-child {
@@ -572,12 +581,15 @@ form {
 }
 
 @media (max-width:666px) {
+    .hamburger-line {
+        display: flex;
+    }
     .header {
         padding: 15px 0;
     }
 
     .container--header {
-        padding: 0;
+        padding-left: 10px;
     }
 
     .nav {
@@ -594,6 +606,10 @@ form {
         padding-right: auto;
     }
 
+    .show {
+        display: flex;
+    }
+
     .nav-link {
         font-size: 20px;
         padding: 10px 15px;
@@ -602,7 +618,7 @@ form {
         margin: 0;
     }
 
-    .active {
+    .active-burger {
         color: #fff;
         background-color: #2E9D42;
     }
@@ -611,6 +627,12 @@ form {
 @media (max-width:400px) {
     .music-type {
         text-align: center;
+    }
+
+    .brand h1 {
+        position: absolute;
+        left: 85px;
+        font-size: 25px;
     }
 }
 
@@ -644,5 +666,23 @@ form {
     .slider-img {
         width: 250px;
         height: 250px;
+    }
+
+    .hamburger-line {
+      width: 30px;
+      height: 2px;
+      margin: 3px 0;
+    }
+}
+
+@media (max-width:278px) {
+    .music-type {
+        text-align: center;
+    }
+
+    .brand h1 {
+        position: absolute;
+        left: 85px;
+        font-size: 20px;
     }
 }
