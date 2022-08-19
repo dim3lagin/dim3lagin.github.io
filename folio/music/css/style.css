@@ -64,7 +64,7 @@ h1 {
     padding: 0 15px;
 }
 
-.active {
+.active-burger {
     color: #2E9D42;
 }
 
@@ -140,6 +140,53 @@ h1 {
     background-color: #fff;
     margin: 5px 0;
     display: none;
+}
+
+
+
+.hamburger-line:nth-child(1),
+.hamburger-menu:nth-child(3) {
+    transform-origin: right;
+    transition: width .2s ease-out;
+}
+
+.hamburger-line {
+    transition: transform .2s ease-out;
+
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1),
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    width: 0;
+}
+
+/*.hamburger-menu.active .hamburger-line:nth-child(2),
+.hamburger-menu.active .hamburger-line:nth-child(4) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 40px;
+    transform-origin: center;
+}*/
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 12px;
+    top: 32px;
+    width: 40px;
+    transition: transform .2s ease-out;
+
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(4) {
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 12px;
+    top: 32px;
+    width: 40px;
+    transition: transform .2s ease-out;
+
 }
 
 
@@ -594,11 +641,11 @@ form {
 
     .nav {
         position: absolute;
-        top: 73px;
+        top: 70px;
         overflow: auto;
         left: 0;
         width: 100%;
-        height: calc(100vh - 76px);
+        height: calc(100vh - -57px);
         z-index: 100;
         background: rgba(0, 0, 0, 0.8);
         display: none;
