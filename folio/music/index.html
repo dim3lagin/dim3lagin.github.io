@@ -2,16 +2,24 @@
 <html lang="en">
 
 <head>
+    <meta title="">
+    <meta name="description"
+        content="Это сайт типо копия Soundclouda, но только тут нельзя послушать музыку) делал для того что бы проверить свои способности">
+    <meta name="keywords" content="KarelSound,музыка,web,css,html,frontend,site,muse,portfolio,портфолио">
     <meta charset="UTF-8">
+    <meta name="Copyright" content="KarelSound">
+    <meta property="og:title" content="KarelSound">
+    <meta property="og:description"
+        content="Это сайт типо копия Soundclouda, но только тут нельзя послушать музыку) делал для того что бы проверить свои способности">
+    <meta property="og:image" content="https://zchwebp.github.io/img/logo.webp">
+    <meta property="og:url" content="https://dim3lagin.github.io/folio/music/ ">
+    <meta property="og:site_name" content="KarelSound">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="fonts/Segoe/stylesheet.css">
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
+    <script src="https://kit.fontawesome.com/c54e8112be.js" crossorigin="anonymous"></script>
     <title>Home</title>
     <style>
         .item {
@@ -36,7 +44,7 @@
     </style>
 </head>
 
-<body class="">
+<body>
 
     <header class="header">
         <div class="container container--header">
@@ -49,6 +57,7 @@
                     <a href="index.html" class="nav-link active-burger">Home</a>
                     <a href="" class="nav-link">Stream</a>
                     <a href="" class="nav-link">Library</a>
+                    <a href="" class="nav-link" data-modal="#becomeClientModal"><i class="fa-regular fa-user"></i></a>
                 </nav>
                 <div class="hamburger-menu" id="navToggle">
                     <span class="hamburger-line"></span>
@@ -91,7 +100,7 @@
                     <p>Now available!</p>
                     <p>Album of MUSE</p>
                     <p>"Simulation Theory"</p>
-                    <div class="btn btn--green">Listen now!</div>
+                    <div class="btn btn--green"><a href="Simulation.html">Listen now!</a></div>
                 </div>
             </div>
         </div>
@@ -119,7 +128,7 @@
             <div class="music-type">Music <span class="span--green">for morning</span></div>
 
             <div class="slider">
-                <div class="album-item">
+                <div class="album-item" id="album-item">
                     <div class="albun-item-img" style="background: url(img/sleep1.jpg);"></div>
                     <div class="desription">
                         <h3>Morning playlist</h3>
@@ -287,6 +296,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+
+    <div class="modal" id="becomeClientModal">
+        <div class="modal-inner">
+            <div class="box2">
+                <img src="/img/close.svg" alt="" class="close-btn" style="float: right;" data-modal-close>
+                <div class="facebook button"><i class="fa-brands fa-facebook brand-company"></i> Continue with Facebook
+                </div>
+                <div class="google button"><img src="/img/google.svg" class="brand-company" alt=""> Continue with Google
+                </div>
+                <div class="apple button"><i class="fa-brands fa-apple brand-company"></i> Continue with Apple</div>
+                <div class="auth-method">
+                    <span>or</span>
+                </div>
+                <form action="" class="form">
+                    <input type="email" class="input-text" placeholder="Your email address or profile URL">
+                    <input type="submit" class="button" value="Continue">
+                </form>
+                <div class="additional-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt officiis suscipit fuga.
+                        Fugiat ratione laudantium inventore porro, adipisci, at, perspiciatis itaque earum quia culpa
+                        tempora cupiditate unde reiciendis ducimus <span class="span---linke"><a href="#">learn
+                                more</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
