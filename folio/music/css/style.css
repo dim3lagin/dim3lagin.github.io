@@ -430,14 +430,14 @@ form {
     cursor: pointer;
     left: 0;
     border: none;
-    background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    background: url('/img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
     cursor: pointer;
     right: 0;
     border: none;
-    background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    background: url('/img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-dots {
