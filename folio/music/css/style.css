@@ -1002,7 +1002,29 @@ form {
     }
 }
 
+@media (max-width:805px) {
+    .music-type-flex {
+        flex-direction: column;
+    }
+
+    .animation-body {
+        margin-left: 0;
+    }
+
+    .slider-other {
+        justify-content: center;
+    }
+}
 @media (max-width:767px) {
+
+    .music-type {
+        font-size: 25px;
+    }
+
+    .music-type-flex  {
+        justify-content: start;
+    }
+
     .slider {
         padding: 0px 40px;
     }
@@ -1015,9 +1037,6 @@ form {
         font-size: 35px;
     }
 
-    .music-type {
-        font-size: 35px;
-    }
 
     .d1 input {
         font-size: 15px;
