@@ -2,102 +2,335 @@
 <html lang="en">
 
 <head>
-    <meta name="description" content="Это сайт веб студии.Лучшие сайты для вас по низким ценам!">
-    <meta name="keywords" content="веб,сайт,css,html,разработка,портфолио,интернет,веб-разработка">
-    <meta property="og:url" content="https://dim3lagin.github.io/index.html ">
-  <meta property="og:image" content="https://dim3lagin.github.io/img/logo.png">
-    <meta property="og:description" content="Это сайт веб студии.Лучшие сайты для вас по низким ценам!">
+    <meta title="">
+    <meta name="description"
+        content="Это сайт типо копия Soundclouda, но только тут нельзя послушать музыку) делал для того что бы проверить свои способности">
+    <meta name="keywords" content="KarelSound,музыка,web,css,html,frontend,site,muse,portfolio,портфолио">
     <meta charset="UTF-8">
+    <meta name="Copyright" content="KarelSound">
+    <meta property="og:title" content="KarelSound">
+    <meta property="og:description"
+        content="Это сайт типо копия Soundclouda, но только тут нельзя послушать музыку) делал для того что бы проверить свои способности">
+    <meta property="og:image" content="https://zchwebp.github.io/img/logo.webp">
+    <meta property="og:url" content="https://dim3lagin.github.io/folio/music/ ">
+    <meta property="og:site_name" content="KarelSound">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <link rel="stylesheet" href="fonts/Segoe/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
-                .insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="fonts/Segoe/stylesheet.css">
+    <script src="https://kit.fontawesome.com/c54e8112be.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <style>
+        .item {
+            background: url(img/albums/muse/killorbecilled.jpg);
+            background-color: #494d55;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            height: 100%;
+        }
 
-        ym(87646469, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true,
-            ecommerce: "dataLayer"
-        });
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/87646469" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+        .item2 {
+            background: url(img/albums/muse/simulation.jpg);
+            background-color: #494d55;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
+
+    <header class="header">
+        <div class="container container--header">
             <div class="header-inner">
-                <div class="name">
-                    <h1 style="font-weight: bold;">Web Developer</h1>
-                </div>
-                <div class="brand"></div>
-                <div class="nav">
-                    <a href="index.html" class="nav-link">
-                        <p>Главная</p>
-                    </a>
-                    <a href="portoflio.html" class="nav-link">
-                        <p>Портфолио</p>
-                    </a>
-                    <a href="contact.html" class="nav-link">
-                        <p>Контакты</p>
-                    </a>
+                <a href="index.html">
+                    <div class="brand">
+                        <img src="img/logo.png" alt="" class="img">
+                        <h1>KarelSound</h1>
+                    </div>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link active-burger">Home</a>
+                    <a href="stream.html" class="nav-link">Stream</a>
+                    <a href="#" class="nav-link">Library</a>
+                    <a href="#" class="nav-link" data-modal="#becomeClientModal"><i class="fa-regular fa-user"></i></a>
+                </nav>
+                <div class="hamburger-menu" id="navToggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <article>
-            <div class="content">
-                <div class="text">
-                    <h5>My name is</h5>
-                    <h2>Dmitry Elagin and I'm <span>Web Developer</span></h2>
+
+    <div class="single-item">
+        <div class="item">
+            <div class="flex">
+                <div class="album">
+                    <img src="img/albums/muse/killorbecilled.jpg" class="slider-img" alt="">
+                    <div class="album-info">
+                        <div>Kill Or Be Killed</div>
+                        <div class="group">MUSE</div>
+                    </div>
                 </div>
-                <div class="textwo">
-                    <p>Привет, я Дима Елагин и это мой сайт. Я начинающий веб-разработчик, специализирующийся на
-                        Frontend
-                        разработке (лицевая часть сайта html,css,учу js). На этом сайте ты можешь увидеть те сайты,
-                        которые
-                        я
-                        уже сделал,они находтся во вкладке портфолио. Если ты захотел себе сайт - то свяжись со мной!
-                    </p>
+                <div class="text-slider">
+                    <p>Now available!</p>
+                    <p>New single of MUSE</p>
+                    <p>"Kill Or Be Killed"</p>
+                    <div class="btn btn--green">Listen now!</div>
                 </div>
             </div>
-        </article>
-        <article>
-            <h2 style="text-align:center; font-size: 2em;" class="fr">Цены</h2>
-            <div class="contentt">
-                <div class="box">
-                    <p class="max">Каждый заказ мы обговариваем с заказчиком лично (срок и цена), но сбоку представлены
-                        примерные цены</p>
-                    <p class="min">Каждый заказ мы обговариваем с заказчиком лично (срок и цена), но ниже представлены
-                        примерные цены</p>
+        </div>
+        <div class="item2">
+            <div class="flex">
+                <div class="album">
+                    <img src="img/albums/muse/simulation.jpg" class="slider-img" alt="">
+                    <div class="album-info">
+                        <div>Simulation Theory</div>
+                        <div class="group">MUSE</div>
+                    </div>
                 </div>
-                <ul class="ff">
-                    <li>Сайт-взитка ~ 5000руб</li>
-                    <li>Лэндинг ~ 3000руб</li>
-                </ul>
+                <div class="text-slider">
+                    <p>Now available!</p>
+                    <p>Album of MUSE</p>
+                    <p>"Simulation Theory"</p>
+                    <div class="btn btn--green btn--white"><a href="simulation.html">Listen now!</a></div>
+                </div>
             </div>
-        </article>
-    </main>
-    <footer>
-        <h4 class="fff">&copy 2022 Дмитрий Елагин</h4>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="search">
+                <h2>Couldn't find the right track?</h2>
+                <h2>Search here!</h2>
+                <div class="d1">
+                    <form>
+                        <input type="text" placeholder="Start writing, and we will offer tracks..." class="input ">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="playlists-carousel">
+        <div class="container">
+            <h2 class="heading">Music for every taste</h2>
+
+            <div class="music-type">Music <span class="span--green">for morning</span></div>
+
+            <div class="slider">
+                <div class="album-item" id="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep1.jpg);"></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep2.jpg);"></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep3.jpg);"></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep4.jpg); "></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep5.jpg);"></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep3.jpg);"></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep4.jpg); "></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/sleep5.jpg);"></div>
+                    <div class="desription">
+                        <h3>Morning playlist</h3>
+                        <p>A wonderful morning playlist to wake up to</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-type">Music <span class="span--green">for run</span></div>
+
+            <div class="slider">
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run1.jpg);"></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run2.jpg);"></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run3.jpg);"></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run4.jpg); "></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run5.jpg);"></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run2.jpg);"></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run1.jpg); "></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+
+                <div class="album-item">
+                    <div class="albun-item-img" style="background: url(img/run2.jpg);"></div>
+                    <div class="desription">
+                        <h3>Run playlist</h3>
+                        <p>A wonderful playlist for jogging, will charge you to conquer new peaks</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mobile">
+        <div class="container container--apps">
+            <div class="devices-blur">
+
+                <div class="devices">
+                    <div class="text-container-blur">
+                        <div class="text-container">
+                            <h2>Never break away from listening, KarelSound is also supported on <span
+                                    class="span---link">Android</span> and <span class="span---link">iOS</span> </h2>
+                            <div class="apps-icons">
+                                <img src="img/apple.png" style="cursor: pointer;" class="img" alt="">
+                                <img src="img/google.png" style="cursor: pointer;" class="img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="contact">test@mail.com</div>
+                <div class="contact">+9948373123 </div>
+                <div class="brand-footer">
+                    <img src="img/logo.png" alt="" class="img-footer">
+                    <h1>KarelSound</h1>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Modals -->
+
+    <div class="modal" id="becomeClientModal">
+        <div class="modal-inner">
+            <div class="box2">
+                <img src="/img/close.svg" alt="" class="close-btn" style="float: right;" data-modal-close>
+                <div class="facebook button"><i class="fa-brands fa-facebook brand-company"></i> Continue with Facebook
+                </div>
+                <div class="google button"><img src="/img/google.svg" class="brand-company" alt=""> Continue with Google
+                </div>
+                <div class="apple button"><i class="fa-brands fa-apple brand-company"></i> Continue with Apple</div>
+                <div class="auth-method">
+                    <span>or</span>
+                </div>
+                <form action="" class="form">
+                    <input type="email" class="input-text" placeholder="Your email address or profile URL">
+                    <input type="submit" class="button" value="Continue">
+                </form>
+                <div class="additional-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt officiis suscipit fuga.
+                        Fugiat ratione laudantium inventore porro, adipisci, at, perspiciatis itaque earum quia culpa
+                        tempora cupiditate unde reiciendis ducimus <span class="span---linke"><a href="#">learn
+                                more</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
-</html>
+</htm
