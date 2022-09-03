@@ -61,7 +61,7 @@ $(function first () {
         $(modal).addClass('show-modal');
 
         setTimeout(function() {
-            $(modal).find('.modal-inner	').css({
+            $(modal).find('.box2').css({
                 transform: 'scale(1)',
                 opacity: '1'
             });
@@ -82,13 +82,13 @@ $(function first () {
     });
 
 
-    $('.modal-inner').on('click', function(event) {
+    $('.box2').on('click', function(event) {
         event.stopPropagation();
     });
 
 
     function modalClose(modal) {
-        modal.find('.modal-inner').css({
+        modal.find('.box2').css({
             transform: 'scale(0.5)',
             opacity: '0'
         });
