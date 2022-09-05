@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;600;800&display=swap');
 
+::selection {
+background: blue;
+}
+::-moz-selection {
+background: blue;
+}
+
 html {
     -webkit-text-size-adjust: none;
 }
