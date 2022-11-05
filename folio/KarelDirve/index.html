@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/Segoe/stylesheet.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="brand">
+                    <img src="img/logo.png" alt="" height="60px" class="logo">
+                    <a href="index.html">
+                        <h1 class="brand">KarelDrive</h1>
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav-link" data-scroll="#whyisthat">Why is that</a>
+                    <a href="#" class="nav-link" data-scroll="#cars">Cars</a>
+                    <a href="#" class="nav-link" data-scroll="#safety">Safety</a>
+                    <a href="#" class="nav-link" data-scroll="#questions">Answers to questions</a>
+                </nav>
+                <div class="nav-burger-button" id="navToggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="global-m">
+        <div>
+            <div class="container">
+                <div class="intro intro--title">
+                    <h1> <span class="span span--green span--large">KarelDrive</span><br> совершенно<br> новый <br>
+                        каршеринг
+                    </h1>
+                    <img src="img/phone.png" alt="" class="img img-phone">
+                </div>
+            </div>
+        </div>
+
+        <section id="whyisthat" data-scrollspy="#whyisthat">
+            <div class="container">
+                <div class="reasons-global">
+                    <h2>Why is what?</h2>
+                    <p>Take the car where it's convenient for you, and leave it where it's convenient for you!</p>
+                    <p>Cars for any occasion</p>
+                    <h2 class="marginh2">Why else KarelDrive?</h2>
+                </div>
+            </div>
+            <div class="bg-img"> </div>
+            <div class="container margin">
+                <div class="reasons-global">
+                    <h2>All cars support KarelAvto</h2>
+                    <h3>And more</h3>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-item">
+                        <div class="flex-item-text">
+                            <div class="heading">Many cars have child seats</div>
+                            <div class="more-info">Your child will be safe</div>
+                        </div>
+                        <img src="./img/children_seat.jpg" class="img" width="105px" height="100%" alt=""
+                            style="padding: 0; margin:0;">
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="flex-item-text">
+                            <div class="heading">All cars have an autorun engine function</div>
+                            <div class="more-info">And you can always adjust the comfortable temperature</div>
+                        </div>
+                        <img src="./img/autorun_engine.jpg" class="img" width="105px" height="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cars-select" id="cars" data-scrollspy="#cars">
+            <div class="container">
+                <div class="reasons-global">
+                    <h2>And here you can see the available cars</h3>
+                </div>
+                <div class="flex-crumb">
+                    <div class="crumb-item active tab-btn" data-tab="#tab_1">Drive</div>
+                    <div class="crumb-item tab-btn" data-tab="#tab_2">With children to the country</div>
+                </div>
+
+                <div class="flex--other flex-active tabs" id="tab_1">
+                    <div class="cars-flex">
+                        <div class="car-item">
+                            <div class="img car-image"
+                                style="background-image: url(./img/Awesome\ Car\ Wrap\ Mockup.png) ;"></div>
+                        </div>
+                        <div class="car-info">
+                            <div class="model">BMW i8</div>
+                            <div class="date-production">2017г</div>
+                        </div>
+                    </div>
+
+                    <div class="cars-flex">
+                        <div class="car-item">
+                            <div class="img car-image"
+                                style="background-image: url(./img/audi\ Decal\ PSD\ Mockup.png) ;"></div>
+                        </div>
+                        <div class="car-info">
+                            <div class="model">Audi R8</div>
+                            <div class="date-production">2017г</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex--other tabs" id="tab_2">
+                    <div class="cars-flex">
+                        <div class="car-item">
+                            <div class="img car-image" style="background-image: url(./img/Aclass.png) ;"></div>
+                        </div>
+                        <div class="car-info">
+                            <div class="model">Mercedes A class</div>
+                            <div class="date-production">2017г</div>
+                        </div>
+                    </div>
+
+                    <div class="cars-flex">
+                        <div class="car-item">
+                            <div class="img car-image" style="background-image: url(./img/PickUp.png) ;"></div>
+                        </div>
+                        <div class="car-info">
+                            <div class="model">Dodge Ram</div>
+                            <div class="date-production">2017г</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="car-safety" id="safety" data-scrollspy="#safety">
+            <div class="container">
+                <div class="reasons-global">
+                    <h2>Safety</h2>
+                </div>
+                <div class="reasons-global">
+                    <p>Why is a trip in our car a guarantee of safety?</p>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-item">
+                        <div class="flex-item-text">
+                            <div class="heading">All cars have full set of airbags</div>
+                            <div class="more-info">You child will be safe</div>
+                        </div>
+                        <div class="bg" style="background-image: url(./img/airbag.jpg) ;"></div>
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="flex-item-text">
+                            <div class="heading">All cars have full set of airbags</div>
+                            <div class="more-info">You child will be safe</div>
+                        </div>
+                        <div class="bg" style="background-image: url(./img/airbag.jpg) ;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions" id="questions" data-scrollspy="#questions">
+            <div class="container">
+                <div class="reasons-global">
+                    <h2>Answers to questions</h2>
+                </div>
+                <div class="reasons-global">
+                    <p>Here we questions to answers</p>
+                </div>
+
+                <div class="column">
+                    <div class="question" data-open="#answer1">
+                        <div class="title title-js">
+                            <h3>Heading 1</h3>
+                        </div>
+                        <div class="answer answer-js" id="answer1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque commodi at, animi nemo
+                                sunt exercitationem tempore officiis cupiditate itaque minima, adipisci sed recusandae
+                                quas nulla mollitia facere reprehenderit eligendi corporis?</p>
+                        </div>
+                    </div>
+
+                    <div class="question" data-open="#answer2">
+                        <div class="title title-js">
+                            <h3>Heading 2</h3>
+                        </div>
+                        <div class="answer answer-js" id="answer2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque commodi at, animi nemo
+                                sunt exercitationem tempore officiis cupiditate itaque minima, adipisci sed recusandae
+                                quas nulla mollitia facere reprehenderit eligendi corporis?</p>
+                        </div>
+                    </div>
+
+                    <div class="question" data-open="#answer3">
+                        <div class="title title-js">
+                            <h3>Heading 3</h3>
+                        </div>
+                        <div class="answer answer-js" id="answer3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque commodi at, animi nemo
+                                sunt exercitationem tempore officiis cupiditate itaque minima, adipisci sed recusandae
+                                quas nulla mollitia facere reprehenderit eligendi corporis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
