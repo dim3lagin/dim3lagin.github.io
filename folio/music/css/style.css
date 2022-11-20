@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;600;800&display=swap');
 
 ::selection {
-background: blue;
+    background: blue;
 }
+
 ::-moz-selection {
-background: blue;
+    background: blue;
 }
 
 html {
@@ -377,7 +378,7 @@ form {
 
 .albun-item-img {
     text-align: center !important;
-    
+
     margin: auto !important;
     padding: auto !important;
 
@@ -966,7 +967,7 @@ form {
     height: 100px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
 }
 
 /*Footer*/
@@ -1232,6 +1233,10 @@ form {
         height: 800px;
         height: 100%;
     }
+
+    .album-info {
+        margin-left: 0;
+    }
 }
 
 @media (max-width:805px) {
@@ -1445,6 +1450,16 @@ form {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    .slider-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .text-slider,
+    .btn {
+        font-size: 25px;
+    }
 }
 
 @media (max-width:340px) {
@@ -1485,10 +1500,20 @@ form {
 
 @media (max-width:292px) {
     .slider-img {
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
     }
 
+    .text-slider,
+    .btn {
+        font-size: 20px;
+    }
+    .album-info div {
+        font-size: 25px;
+    }
+    .group {
+        font-size: 20px !important;
+    }
     .hamburger-line {
         width: 30px;
         height: 2px;
