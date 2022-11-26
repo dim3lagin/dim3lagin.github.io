@@ -512,11 +512,7 @@ form {
     margin: 50px 0;
 }
 
-.text-container-blur {
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(7px);
-}
+
 
 .text-container {
     max-width: 737px;
@@ -531,13 +527,24 @@ form {
 }
 
 .devices {
+    position: relative;
+    height: 462px;
+}
+
+.devices::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     background: url(../img/app.jpg);
-    background-color: #494d55;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top -70px left;
 
-    height: 462px;
+    filter: brightness(.6);
+    z-index: -1;
 }
 
 .apps-icons {
