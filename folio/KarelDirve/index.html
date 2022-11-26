@@ -11,26 +11,34 @@
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header">
         <div class="container">
             <div class="header-inner">
                 <div class="brand">
-                    <img src="img/logo.png" alt="" height="60px" class="logo">
+                    <img src="img/logo.png" alt="" height="60px">
                     <a href="index.html">
-                        <h1 class="brand">KarelDrive</h1>
+                        <h1>KarelDrive</h1>
                     </a>
                 </div>
-                <nav class="nav" id="nav">
-                    <a href="#" class="nav-link" data-scroll="#whyisthat">Why is that</a>
-                    <a href="#" class="nav-link" data-scroll="#cars">Cars</a>
-                    <a href="#" class="nav-link" data-scroll="#safety">Safety</a>
-                    <a href="#" class="nav-link" data-scroll="#questions">Answers to questions</a>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Why is that</a>
+                    <a href="#" class="nav-link">Cars</a>
+                    <a href="#" class="nav-link">Safety</a>
+                    <a href="#" class="nav-link">Answers to questions</a>
                 </nav>
                 <div class="nav-burger-button" id="navToggle">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
+                </div>
+                <div class="nav-burger-inner" id="nav">
+                    <div class="nav-burger-items">
+                        <a href="#" class="burger burger-active">Why is that</a>
+                        <a href="#" class="burger">Cars</a>
+                        <a href="#" class="burger">Safety</a>
+                        <a href="#" class="burger">Answers to questions</a>                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,7 +56,7 @@
             </div>
         </div>
 
-        <section id="whyisthat" data-scrollspy="#whyisthat">
+        <section>
             <div class="container">
                 <div class="reasons-global">
                     <h2>Why is what?</h2>
@@ -81,17 +89,19 @@
                         </div>
                         <img src="./img/autorun_engine.jpg" class="img" width="105px" height="100%" alt="">
                     </div>
+
                 </div>
+
             </div>
         </section>
 
-        <section class="cars-select" id="cars" data-scrollspy="#cars">
+        <div class="cars-select">
             <div class="container">
                 <div class="reasons-global">
                     <h2>And here you can see the available cars</h3>
                 </div>
                 <div class="flex-crumb">
-                    <div class="crumb-item active tab-btn" data-tab="#tab_1">Drive</div>
+                    <div class="crumb-item active-item tab-btn" data-tab="#tab_1">Drive</div>
                     <div class="crumb-item tab-btn" data-tab="#tab_2">With children to the country</div>
                 </div>
 
@@ -142,9 +152,9 @@
                 </div>
 
             </div>
-        </section>
+        </div>
 
-        <section class="car-safety" id="safety" data-scrollspy="#safety">
+        <div class="car-safety">
             <div class="container">
                 <div class="reasons-global">
                     <h2>Safety</h2>
@@ -171,9 +181,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="questions" id="questions" data-scrollspy="#questions">
+        <div class="questions">
             <div class="container">
                 <div class="reasons-global">
                     <h2>Answers to questions</h2>
@@ -196,7 +206,7 @@
 
                     <div class="question" data-open="#answer2">
                         <div class="title title-js">
-                            <h3>Heading 2</h3>
+                            <h3>Heading 1</h3>
                         </div>
                         <div class="answer answer-js" id="answer2">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque commodi at, animi nemo
@@ -207,7 +217,7 @@
 
                     <div class="question" data-open="#answer3">
                         <div class="title title-js">
-                            <h3>Heading 3</h3>
+                            <h3>Heading 1</h3>
                         </div>
                         <div class="answer answer-js" id="answer3">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque commodi at, animi nemo
@@ -217,8 +227,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
