@@ -6,13 +6,13 @@ navToggle.on('click', function (event) {
     event.preventDefault();
 
     $("body").toggleClass('show-nav');
-    $(this).toggleClass('active');
+    $(this).toggleClass('activee');
     nav.toggleClass('nav-burger-inner-active');
 });
 
 $(window).on("resize", function () {
     $("body").removeClass('show-nav');
-    navToggle.removeClass('active');
+    navToggle.removeClass('activee');
     nav.removeClass('nav-burger-inner-active');
 });
 

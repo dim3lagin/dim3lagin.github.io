@@ -122,6 +122,36 @@ p {
     transition: transform .2s ease-out;
 }
 
+.nav-burger-inner {
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(1000px);
+    transition: .2s ease-out;
+}
+
+.nav-burger-inner-active {
+    transform: translateX(0px);
+}
+
+.nav-burger-items {
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+
+.burger {
+    text-align: end;
+    padding: 5px 10px;
+}
+
+.burger-active {
+    background-color: #2E9D42;
+}
+
 /*Hamburger*/
 .header {
     background-color: #000;
@@ -400,9 +430,9 @@ p {
     }
 }
 
-@media (min-width:851px) {
+@media (min-width:850px) {
     .nav-burger-inner {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -412,7 +442,7 @@ p {
     }
 
     .nav-burger-button {
-        display: none;
+        display: none !important;
     }
 }
 
