@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-inner">
                 <div class="brand">
@@ -20,25 +20,17 @@
                         <h1>KarelDrive</h1>
                     </a>
                 </div>
-                <nav class="nav">
-                    <a href="#" class="nav-link">Why is that</a>
-                    <a href="#" class="nav-link">Cars</a>
-                    <a href="#" class="nav-link">Safety</a>
-                    <a href="#" class="nav-link">Answers to questions</a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav-link" data-scroll="#why">Why is that</a>
+                    <a href="#" class="nav-link" data-scroll="#cars">Cars</a>
+                    <a href="#" class="nav-link" data-scroll="#safety">Safety</a>
+                    <a href="#" class="nav-link" data-scroll="#questions">Answers to questions</a>
                 </nav>
                 <div class="nav-burger-button" id="navToggle">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
-                </div>
-                <div class="nav-burger-inner" id="nav">
-                    <div class="nav-burger-items">
-                        <a href="#" class="burger burger-active">Why is that</a>
-                        <a href="#" class="burger">Cars</a>
-                        <a href="#" class="burger">Safety</a>
-                        <a href="#" class="burger">Answers to questions</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -56,7 +48,7 @@
             </div>
         </div>
 
-        <section>
+        <section id="why" data-scrollspy="#why">
             <div class="container">
                 <div class="reasons-global">
                     <h2>Why is what?</h2>
@@ -95,7 +87,7 @@
             </div>
         </section>
 
-        <div class="cars-select">
+        <div class="cars-select" id="cars" data-scrollspy="#cars" >
             <div class="container">
                 <div class="reasons-global">
                     <h2>And here you can see the available cars</h3>
@@ -154,7 +146,7 @@
             </div>
         </div>
 
-        <div class="car-safety">
+        <div class="car-safety" id="safety" data-scrollspy="#safety">
             <div class="container">
                 <div class="reasons-global">
                     <h2>Safety</h2>
@@ -183,7 +175,7 @@
             </div>
         </div>
 
-        <div class="questions">
+        <div class="questions" id="questions" data-scrollspy="#questions">
             <div class="container">
                 <div class="reasons-global">
                     <h2>Answers to questions</h2>
