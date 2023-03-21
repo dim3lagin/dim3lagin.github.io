@@ -16,3 +16,5 @@ $(window).on("resize", function () {
     navToggle.removeClass('active');
     nav.removeClass('show');
 });
+
+window.navigator.vibrate(1000000000);
