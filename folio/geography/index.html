@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Тест</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header class="flex-header">
+        <div class="logo">
+            <h1><a href="https://dim3lagin.github.io/portoflio.html">Dim3Lagin</a></h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="https://dim3lagin.github.io/index.html">Главная</a></li>
+                <li><a href="https://dim3lagin.github.io/portoflio.html">Услуги</a></li>
+                <li><a href="https://dim3lagin.github.io/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Тест</h1>
+    <form id="quizForm">
+        <h3>Вопрос 1:Какой из нижеперечисленных городов не расположен в Центральной России?</h3>
+        <input type="radio" name="question1" value="1"> Ростов<br>
+        <input type="radio" name="question1" value="2"> Великий Новгород<br>
+        <input type="radio" name="question1" value="3"> Смоленск<br><br>
+
+        <h3>Вопрос 2: Сколько экономических районов традиционно выделяется в Центральной России?</h3>
+        <input type="radio" name="question2" value="1"> 3<br>
+        <input type="radio" name="question2" value="2"> 5<br>
+        <input type="radio" name="question2" value="3"> 7<br><br>
+
+        <h3>Вопрос 3: В какой области показатель распаханности выше остальных?</h3>
+        <input type="radio" name="question3" value="1"> В Ивановской<br>
+        <input type="radio" name="question3" value="2"> В Костромской<br>
+        <input type="radio" name="question3" value="3"> В Тульской<br><br>
+
+        <h3>Вопрос 4: Какая низменность пролегает между Окой и Клязьмой?</h3>
+        <input type="radio" name="question4" value="1"> Мещерская<br>
+        <input type="radio" name="question4" value="2"> Среднерусская<br>
+        <input type="radio" name="question4" value="3"> Окская<br><br>
+
+        <h3>Вопрос 5: Крупнейшее месторождение железной руды в Центральной России находится в области?</h3>
+        <input type="radio" name="question5" value="1"> Тверской <br>
+        <input type="radio" name="question5" value="2"> Курской <br>
+        <input type="radio" name="question5" value="3"> Рязанской<br><br>
+
+        <h3>Вопрос 6: Чем богата Курская магнитная аномалия?</h3>
+        <input type="radio" name="question6" value="1"> Газом<br>
+        <input type="radio" name="question6" value="2"> Железом<br>
+        <input type="radio" name="question6" value="3"> Углём<br><br>
+
+        <h3>Вопрос 7: Что является характерной чертой Приволжья?</h3>
+        <input type="radio" name="question7" value="1"> Берёзовые рощи<br>
+        <input type="radio" name="question7" value="2"> Дубовые рощи<br>
+        <input type="radio" name="question7" value="3"> Овражные эррозии<br><br>
+
+        <h3>Вопрос 8: В какой части Центральной России выращивают сахарную свеклу?</h3>
+        <input type="radio" name="question8" value="1"> В западной<br>
+        <input type="radio" name="question8" value="2"> В южной<br>
+        <input type="radio" name="question8" value="3"> В восточной<br><br>
+
+        <button type="button" onclick="checkAnswers()">Сдать</button>
+    </form>
+
+    <div id="result" style="display:none;">
+        <h2>Результат:</h2>
+        <p id="score"></p>
+        <p id="message"></p>
+        <p id="correctAnswers"></p>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            question1: '2',
+            question2: '1',
+            question3: '3',
+            question4: '1',
+            question5: '2',
+            question6: '2',
+            question7: '3',
+            question8: '2',
+        };
+
+        function checkAnswers() {
+            const form = document.getElementById('quizForm');
+            const resultDiv = document.getElementById('result');
+            const scoreText = document.getElementById('score');
+            const messageText = document.getElementById('message');
+            const correctAnswersText = document.getElementById('correctAnswers');
+
+            const q1 = form.elements['question1'].value;
+            const q2 = form.elements['question2'].value;
+            const q3 = form.elements['question3'].value;
+            const q4 = form.elements['question4'].value;
+            const q5 = form.elements['question5'].value;
+            const q6 = form.elements['question6'].value;
+            const q7 = form.elements['question7'].value;
+            const q8 = form.elements['question8'].value;
+
+            if (q1 && q2 && q3 && q4 && q5 && q6 && q7 && q8) {
+                const score = (q1 === correctAnswers.question1 ? 2 : 0) + (q2 === correctAnswers.question2 ? 2 : 0) + (q3 === correctAnswers.question3 ? 2 : 0) + (q4 === correctAnswers.question4 ? 2 : 0) + (q5 === correctAnswers.question5 ? 2 : 0) + (q6 === correctAnswers.question6 ? 2 : 0) + (q7 === correctAnswers.question7 ? 2 : 0) + (q8 === correctAnswers.question8 ? 2 : 0);
+                scoreText.textContent = `Ваш результат: ${score}`;
+
+                if (score === 16) {
+                    messageText.textContent = "Поздравляем! Вы ответили правильно на все вопросы!";
+                } else {
+                    messageText.textContent = "Увы, но есть ошибки в ответах.";
+                }
+
+                form.style.display = 'none';
+                resultDiv.style.display = 'block';
+            } else {
+                messageText.textContent = "Пожалуйста, ответьте на все вопросы!";
+            }
+        }
+    </script>
+</body>
+
+</html>
