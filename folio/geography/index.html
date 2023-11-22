@@ -5,7 +5,7 @@
     <title>Тест</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -104,9 +104,9 @@
 
             if (q1 && q2 && q3 && q4 && q5 && q6 && q7 && q8) {
                 const score = (q1 === correctAnswers.question1 ? 2 : 0) + (q2 === correctAnswers.question2 ? 2 : 0) + (q3 === correctAnswers.question3 ? 2 : 0) + (q4 === correctAnswers.question4 ? 2 : 0) + (q5 === correctAnswers.question5 ? 2 : 0) + (q6 === correctAnswers.question6 ? 2 : 0) + (q7 === correctAnswers.question7 ? 2 : 0) + (q8 === correctAnswers.question8 ? 2 : 0);
-                scoreText.textContent = `Ваш результат: ${score}`;
+                scoreText.textContent = `Ваш результат: ${score}` `из 8`;
 
-                if (score === 16) {
+                if (score === 8) {
                     messageText.textContent = "Поздравляем! Вы ответили правильно на все вопросы!";
                 } else {
                     messageText.textContent = "Увы, но есть ошибки в ответах.";
