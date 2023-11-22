@@ -103,7 +103,7 @@
             const q8 = form.elements['question8'].value;
 
             if (q1 && q2 && q3 && q4 && q5 && q6 && q7 && q8) {
-                const score = (q1 === correctAnswers.question1 ? 1 : 0) + (q2 === correctAnswers.question2 ? 1 : 0) + (q3 === correctAnswers.question3 ? 1 : 0) + (q4 === correctAnswers.question4 ? 1 : 0) + (q5 === correctAnswers.question5 ? 1 : 0) + (q6 === correctAnswers.question6 ? 1 : 0) + (q7 === correctAnswers.question7 ? 1 : 0) + (q8 === correctAnswers.questio8 ? 1 : 0);
+                const score = (q1 === correctAnswers.question1 ? 1 : 0) + (q2 === correctAnswers.question2 ? 1 : 0) + (q3 === correctAnswers.question3 ? 1 : 0) + (q4 === correctAnswers.question4 ? 1 : 0) + (q5 === correctAnswers.question5 ? 1 : 0) + (q6 === correctAnswers.question6 ? 1 : 0) + (q7 === correctAnswers.question7 ? 1 : 0) + (q8 === correctAnswers.question8 ? 1 : 0);
                 scoreText.textContent = `Ваш результат: ${score} из 8`;
 
                 if (score === 8) {
