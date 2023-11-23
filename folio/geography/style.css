@@ -114,10 +114,7 @@ button:hover {
     h3 {
         font-size: 14px;
     }
-}
-
-@media (max-width: 384px) {
-    .nav-links li {
+     .nav-links li {
         margin-left: 15px;
         margin-right: 15px;
     }
