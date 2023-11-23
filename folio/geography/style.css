@@ -115,7 +115,7 @@ button:hover {
     }
 }
 
-@media (max-width: 359px) {
+@media (max-width: 384px) {
     .nav-links li {
         margin-left: 15px;
         margin-right: 15px;
