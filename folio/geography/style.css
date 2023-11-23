@@ -114,3 +114,13 @@ button:hover {
         font-size: 14px;
     }
 }
+
+@media (max-width: 359px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+}
