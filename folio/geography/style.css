@@ -35,7 +35,7 @@ a {
 
 .logo h1 {
     margin: 0;
-    
+
 }
 
 .nav-links ul {
@@ -116,11 +116,18 @@ button:hover {
 }
 
 @media (max-width: 359px) {
-    h1 {
-        font-size: 20px;
+    .nav-links li {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
-    .nav-links li {
-        margin-left: 10px;
+    .flex-header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #result,
+    form {
+        width: 80%;
     }
 }
