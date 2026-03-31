@@ -84,13 +84,6 @@ body {
     margin-right: 1em;
 }
 
-.grid {
-    justify-content: center;
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,10 +153,6 @@ body {
     grid-row-end: 9;
 }
 
-.one {
-    height: 8.5em;
-}
-
 .color-text {
     color: var(--text-color-p);
 }
@@ -188,3 +177,5 @@ body {
         margin-bottom: 1em;
     }
 }
+
+
