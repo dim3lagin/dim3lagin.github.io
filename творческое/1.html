@@ -1,0 +1,48 @@
+ <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Tooltip with Image</title> 
+<style> 
+/* Стили для всплывающей подсказки */ 
+.tooltip { 
+  position: relative; 
+  display: inline-block; 
+  cursor: pointer; 
+} 
+ 
+.tooltip .tooltiptext { 
+  visibility: hidden; 
+  width: 200px; 
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 6px; 
+  padding: 10px; 
+  position: absolute; 
+  z-index: 1; 
+  bottom: 125%; 
+  left: 50%; 
+  margin-left: -100px; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+} 
+ 
+.tooltip:hover .tooltiptext { 
+  visibility: visible; 
+  opacity: 1; 
+} 
+</style> 
+</head> 
+<body> 
+ 
+<!-- Картинка с всплывающей подсказкой --> 
+<div class="tooltip"> 
+  <img src="https://your_image_url.jpg" width="-1" height="-1" alt = "false|false"/> 
+  <span class="tooltiptext">Привет!!</span> 
+</div> 
+ 
+</body> 
+</html> 
+ 

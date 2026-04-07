@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/Segoe/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="fonts/Segoe/stylesheet.css">
+    <script src="https://kit.fontawesome.com/c54e8112be.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#2e9d42">
+    <title>Home</title>
+    <style>
+        .footer {
+            position: relative !important;
+        }
+
+        section {
+            height: 100%;
+            margin-top: 100px !important;
+            margin-bottom: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container--header">
+            <div class="header-inner"> <a href="index.html">
+                    <div class="brand"> <img src="img/logo.png" alt="" class="img">
+                        <h1>Дима Елагин</h1>
+                    </div>
+                </a>
+                <nav class="nav" id="nav"> <a href="index.html" class="nav-link">Главная</a> <a href="album.html"
+                        class="nav-link active-burger">Музыка</a> <a href="#" class="nav-link"
+                        data-modal="#becomeClientModal"><i class="fa-regular fa-user"></i></a>
+                </nav>
+                <div class="hamburger-menu" id="navToggle"> <span class="hamburger-line"></span> <span
+                        class="hamburger-line"></span> <span class="hamburger-line"></span> <span
+                        class="hamburger-line"></span> </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="album-flex">
+                <a
+                    href="https://rubyray.bandcamp.com/album/growing-up?search_item_id%3D3075378720%26search_item_type%3Da%26search_match_part%3D%253F%26search_page_id%3D5256457494%26search_page_no%3D0%26search_rank%3D2"><img
+                        src="img/cover.png" alt="" width="300px" style="border-radius: 5px;" class="addf"></a>
+                <div class="album-name">
+                    <h1>Growing Up</h1>
+                    <p>Ruby</p>
+                </div>
+
+            </div>
+            <div style="width: 600px;">
+                <p>Альбом создан в соавторстве с<br>
+                <div class="tooltip"><span class="span---linke">John Petrucci</span> <span class="tooltiptext"><img
+                            src="img/john.jpg" alt="" width="300px"></span>
+                </div> (Dream Theatre) <br>
+                <div class="tooltip"><span class="span---linke">Jordan Rudes</span> <span class="tooltiptext"><img
+                            src="img/jordan.webp" alt="" width="400px"></span></div> (Dream Theatre) <br>
+                <div class="tooltip"><span class="span---linke">Matthew Bellamy </span> <span class="tooltiptext"><img
+                            src="img/matt.webp" alt="" width="400px"></span> </div> (Muse) <br>
+                <span class="span---linke">Олег Левашов</span> (No Rust TV) <br>
+                <span class="span---linke">Андрей Мирославцев</span> (prod.by.Kitty)<br>
+                Записано и сведено на студии <span class="span--green">Elagini</span>
+                </p>
+            </div>
+            <div class="listen">
+                <iframe style="border: 0; width: 100%; height: 120px;"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=3075378720/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+                    seamless><a href="https://rubyray.bandcamp.com/album/growing-up">Growing Up by Ruby</a></iframe>
+            </div>
+            <div>
+                <table>
+                    <caption>Позиция в чартах</caption>
+                    <tr>
+                        <th>Страна</th>
+                        <th>Место</th>
+                    </tr>
+                    <tr>
+                        <td>Россия <img src="img/rus.png" alt="" width="20px" style="vertical-align: text-bottom;"></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>США <img src="img/usa.png" alt="" width="20px" style="vertical-align: text-bottom;"> </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Великобритания <img src="img/uk.png" alt="" width="20px"
+                                style="vertical-align: text-bottom;"> </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Португалия <img src="img/prtg.png" alt="" width="20px" style="vertical-align: text-bottom;">
+                        </td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="contact">test@mail.com</div>
+                <div class="contact">+9948373123 </div>
+                <div class="brand-footer"> <img src="img/logo.png" alt="" class="img-footer">
+                    <h1>Дима Елагин</h1>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Modals -->
+    <div class="modal" id="becomeClientModal">
+        <div class="modal-inner">
+            <div class="box2"> <img src="img/close.svg" alt="" class="close-btn" style="float: right;" data-modal-close>
+                <div class="facebook button"><i class="fa-brands fa-facebook brand-company"></i> Continue with Facebook
+                </div>
+                <div class="google button"><img src="img/google.svg" class="brand-company" alt=""> Continue with Google
+                </div>
+                <div class="apple button"><i class="fa-brands fa-apple brand-company"></i> Continue with Apple</div>
+                <div class="auth-method"> <span>or</span> </div>
+                <form action="" class="form"> <input type="email" class="input-text"
+                        placeholder="Your email address or profile URL"> <input type="submit" class="button"
+                        value="Continue"> </form>
+                <div class="additional-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt officiis suscipit fuga.
+                        Fugiat ratione laudantium inventore porro, adipisci, at, perspiciatis itaque earum quia culpa
+                        tempora cupiditate unde reiciendis ducimus <span class="span---linke"><a href="#">learn
+                                more</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</htm
