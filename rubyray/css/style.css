@@ -174,7 +174,6 @@ h1 {
     left: 0;
 }
 
-/* Положения линий в закрытом состоянии */
 .hamburger-line:nth-child(1) {
     top: 10px;
 }
@@ -191,9 +190,7 @@ h1 {
     display: none;
 }
 
-/* 4-ю можно убрать вообще */
 
-/* Открытое состояние (крестик) */
 .nav-burger-button.activee .hamburger-line:nth-child(1) {
     top: 20px;
     transform: rotate(45deg);
