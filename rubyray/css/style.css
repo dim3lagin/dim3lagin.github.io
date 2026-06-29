@@ -460,7 +460,6 @@ h1 {
 @media (max-width: 1278px) {
     .section {
         width: 100%;
-        background-image: url(../img/1_for_small_scr.jpg);
         background-position: top center;
     }
 
