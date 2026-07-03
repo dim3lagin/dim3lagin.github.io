@@ -48,3 +48,28 @@ $('.multiple-items').slick({
         }
     ]
 });
+
+
+/*Filters*/
+/*
+const checkboxes = document.querySelectorAll('.right input[type="checkbox"]');
+const albums = document.querySelectorAll('#itemsList .album');
+
+function applyFilter() {
+  const selected = Array.from(checkboxes)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value.toLowerCase());
+
+  albums.forEach(album => {
+    const category = album.dataset.category.toLowerCase();
+    if (selected.includes(category)) {
+      album.classList.remove('hidden');
+    } else {
+      album.classList.add('hidden');
+    }
+  });
+}
+
+checkboxes.forEach(cb => cb.addEventListener('change', applyFilter));
+
+applyFilter();*/

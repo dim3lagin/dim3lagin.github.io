@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <style>
+        @media (max-width: 1100px) {
+            .album>img {
+                height: 240px !important;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .realeses>h1 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+      <header class="header">
+        <div class="header-inner">
+            <div class="logo">Ruby</div>
+
+            <div id="nav" class="nav">
+                <div class="nav-link "> <a href="index.html">Главная</a></div>
+
+                <div class="nav-link nav-link-active"> <a href="music.html">Музыка </a></div>
+
+
+                <div class="nav-link "><a href="about.html">Артист </a>
+                </div>
+
+            </div>
+            <div class="nav-burger-button" id="navToggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="realeses" style="min-height: 80vh; margin-top: 80px;">
+        <h1 >DISCOGRAPHY</h1>
+
+        <div class="flex">
+            <div class="left" id="itemsList">
+                <a href="https://rubyray.bandcamp.com/album/growing-up">
+                    <div class="album other-album" data-category="EP">
+                        <img src="img/growing_up.jpg" alt="" height="272px">
+                        <div class="name">Growing UP</div>
+                        <div class="artirst">Ruby </div>
+                        <div class="type_year">EP * 2025</div>
+                    </div>
+                </a>
+
+                <a href="https://rubyray.bandcamp.com/track/the-neon-idol">
+                    <div class="album other-album" data-category="SINGLE">
+                        <img src="img/cover.png" alt="" height="272px">
+                        <div class="name">Неоновый Идол</div>
+                        <div class="artirst">Ruby</div>
+                        <div class="type_year">Single * 2026</div>
+                    </div>
+                </a>
+            </div>
+            <!--   <div class="right">
+                <h2>Filters</h2>
+                <label style="margin-top: 10px;"><input type="checkbox" value="SINGLE" checked>Single</label>
+                <label><input type="checkbox" value="EP" checked>EP</label>
+                <label><input type="checkbox" value="album" checked>Album</label>
+            </div>
+-->
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-name">Ruby</div>
+        <div class="social-links">
+            <a class="ll" href="https://rubyray.bandcamp.com/">Bandcamp</a>
+            <a class="ll" href="https://soundcloud.com/ruburay">SoundCloud</a>
+            <a class="ll" href="https://www.youtube.com/@ruby_musiccrp">Youtube</a>
+            <a class="ll" href="#">VK</a>
+            <a class="ll" href="https://poeziya.ru/u/98316/">poeziya.ru</a>
+            <a class="ll" href="https://pinterest.com/ruby_musiccrp/">Pinterest</a>
+        </div>
+        <div class="copyright">&copy 2026 Ruby. ALL RIGHTS RESERVED.</div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
